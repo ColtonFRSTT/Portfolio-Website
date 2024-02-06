@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colton Fridgen</title>
+        <link href="main.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <script type="text/javascript">
+            const cursor = document.querySelector('.cursor');
+
+            // Add event listener to track mouse movement
+            document.addEventListener('mousemove', (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.style.top = y + 'px';
+                cursor.style.left = x + 'px';
+            });
+        </script>
+        <header>
+            <nav>
+                <ul>
+                    <li>Projects</li>
+                    <li>Resume</li>
+                    <li>Github</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="welcome">
+            <h1><strong id="pop">Hi</strong>, my name is <strong id="pop">Colton</strong></h1>
+            <p>a <strong id="pop">computer science</strong> student</p>
+        </div>
+    </body>
+</html>
