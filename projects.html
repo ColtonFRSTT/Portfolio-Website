@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colton Fridgen</title>
+        <link href="projects.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <script type="text/javascript">
+            const cursor = document.querySelector('.cursor');
+
+            // Add event listener to track mouse movement
+            document.addEventListener('mousemove', (e) => {
+                let x = e.pageX;
+                let y = e.pageY;
+
+                cursor.style.top = y + 'px';
+                cursor.style.left = x + 'px';
+            });
+        </script>
+        <h1> Gmail Spam Detector using Naive Bayes Classification model and Google Cloud API </h1>
+        <a id = "spamLink" href = "https://github.com/ColtonFRSTT/Python-Spam-Detector"> GitHub Repository</a>
+        <p>
+            Using Scikit Learn's naive bayes classification library I created a machine learning
+            model that can detect spam emails using term frequency-inverse document frequency with a 96% accuracy.
+        </p>
+        <img id = "trainingImg" src = "training_code.png" alt = "training code">
+        <img id = "accuracyImg" src = "accuracy_report.png" alt = "testing code">
+        <p>
+            I then used Google Cloud's Gmail API to deploy the model. The program scans all unread emails
+            in the users inbox and labels them as spam or not spam, placing spam emails in the users spam folder.
+        </p>
+        <img id = "appImg" src = appCode.png alt = "app code">
+    </body>
+</html>

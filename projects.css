@@ -1,0 +1,92 @@
+* {
+    cursor: none;
+}
+
+body {
+    background-color: #050505;
+}
+
+.cursor {
+    position: fixed;
+    z-index: 999;
+    background: #4be03a;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #4be03a,
+                0 0 60px #4be03a,
+                0 0 100px #4be03a;
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #4be03a;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 75px;
+    top: 100px;
+    left: 100px;
+    width: 80%;
+    color: #4be03a;
+}
+
+p {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    top: 100px;
+    left: 150px;
+    width: 80%;
+    color: white;
+}
+
+#trainingImg {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#accuracyImg {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#appImg {
+    position: relative;
+    top: 100px;
+    display: block;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#spamLink {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+#spamLink:hover {
+    color: #4be03a;
+    text-decoration: underline;
+}
